@@ -1,3 +1,5 @@
+'use client'
+
 import { Fragment, useState } from "react";
 import {FiUser} from "react-icons/fi"
 import {RiShoppingCartLine} from "react-icons/ri"
@@ -49,7 +51,6 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-white ">
@@ -93,7 +94,7 @@ export default function Navbar() {
         </div>
       </div>
       <nav
-        className="mx-auto z-20 flex lg:gap-14 max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto z-20 flex lg:gap-16 xl:gap-24 lg:max-w-7x xl:container items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex">
@@ -117,7 +118,7 @@ export default function Navbar() {
                 <Popover.Button
                   type="button"
                   className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                  onClick={() => setMobileMenuOpen(true)}
+                  
                 >
                   <span className="sr-only">Open main menu</span>
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -218,7 +219,7 @@ export default function Navbar() {
             )}
           </Popover>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-6 text-gray-800  font-medium">
+        <Popover.Group className="hidden lg:flex lg:gap-6 xl:gap-12 text-gray-800  font-medium">
           <Popover className="relative">
             {({ open }) => (
               <>
@@ -307,17 +308,17 @@ export default function Navbar() {
           </a>
         </Popover.Group>
 
-        <div className=" lg:flex relative hidden flex-1 grow">
+        <div className=" lg:block relative hidden flex-1 grow">
         <input
                   type="text"
                   name="search"
                   id="search"
                   placeholder="search product"
                   autoComplete="given-name"
-                  className="block w-full px-4 pr-16 rounded-full border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset hover:ring-transparent focus:outline-none focus:ring-primary-100 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                  className="block max-w-lg px-4 lg:pr-10 xl:pr-16 w-full rounded-full border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset hover:ring-transparent focus:outline-none focus:ring-primary-100 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 />
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 absolute top-[17%] left-[89%] text-gray-600">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className=" w-6 h-6 absolute top-[17%] lg:right-2  text-gray-600">
   <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
 </svg>
 

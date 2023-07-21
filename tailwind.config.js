@@ -13,7 +13,19 @@ module.exports = {
         },
         primary: {
           100: "#003D29",
+          200 : "#08AC0A"
         },
+      },
+      screens:{
+        'xs':{max:'320px'},
+        'sm':{max:'520px'},
+        'sm2':{max:'768px'},
+        'tab':{max:'1120px'},
+        'lgh': {'raw': '(max-height: 1100px)'},
+        'mdh': {'raw': '(max-height: 1000px)'},
+        'smh': {'raw': '(max-height: 800px)'},
+        'smh2': {'raw': '(max-height: 700px)'},
+        'xsh': {'raw': '(max-height: 600px)',},
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -22,5 +34,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 };
