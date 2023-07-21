@@ -29,6 +29,9 @@ export async function generateMetadata({ params }) {
     return {
       title: productDetails.title,
       description: productDetails.description,
+      icons: {
+        icon: productDetails.image,
+      },
       favicon: productDetails.image,
     };
   } catch (e) {
