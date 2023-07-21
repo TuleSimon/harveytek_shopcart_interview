@@ -1,9 +1,6 @@
-import React from 'react'
-
-function loading() {
-  return (
-    <div className='h-screen bg-white w-screen flex text-6xl place-items-center'>loading</div>
-  )
+export default function Loading() {
+  // You can add any UI inside Loading, including a Skeleton.
+  return <div className="w-full min-h-screen bg-white text-gray-700 text-4xl place-content-center place-items-center">
+    LOADING..
+  </div>
 }
-
-export default loading
