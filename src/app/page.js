@@ -9,6 +9,10 @@ import ProductsCard from "@/components/cards/ProductsCard";
 
 export const metadata = {
   title: "Shop Cart",
+  description: "An interview project to test my skills",
+  icons: {
+    icon: '/logo.svg',
+  },
 };
 
 const TopCategories = [
