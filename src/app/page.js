@@ -58,7 +58,6 @@ const getProducts = async () => {
 export default async function Home() {
 
   const products = await getProducts()
-  console.log(products);
 
   return (
     <main className="lg:max-w-7x xl:container p-6 lg:px-8 bg-white mx-auto  ">
@@ -118,7 +117,7 @@ export default async function Home() {
 
           <p className="text-gray-900 text-3xl sm:text-2xl font-bold"> Products </p>
 
-          <div className="grid w-full overflow-hidden sm2:grid-cols-2 md:grid-cols-3 grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 lg:gap-6 mt-8 xs:mt-2">
+          <div className="grid w-full overflow-hidden sm2:grid-cols-2 md:grid-cols-3 grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 sm:gap-y-6 gap-4 lg:gap-6 mt-8 xs:mt-2">
             {products.map((product) => {
               return (
                 <ProductsCard
@@ -129,6 +128,7 @@ export default async function Home() {
                   rating={product.rating.rate}
                   ratingNum={product.rating.count}
                   description={product.description}
+                  id = {product.id}
                 />
               );
             })}
