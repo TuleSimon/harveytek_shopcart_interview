@@ -204,7 +204,7 @@ export default function Navbar() {
                         href="#"
                         className="text-base  leading-6 text-gray-800 font-medium"
                       >
-                        What's New
+                        What&apos;s New
                       </a>
                       <a
                         href="#"
@@ -298,7 +298,7 @@ export default function Navbar() {
             href="#"
             className="text-base  leading-6 hover:text-gray-500"
           >
-            What's New
+            What&apos;s New
           </a>
           <a
             href="#"

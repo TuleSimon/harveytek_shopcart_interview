@@ -165,7 +165,7 @@ async function Page({ params }) {
                   {" "}
                   Only <span className="text-[#FF9D56]">
                     12 items
-                  </span> Left! <br /> Don't miss it.
+                  </span> Left! <br /> Don&apos;t miss it.
                 </p>
               </div>
 
